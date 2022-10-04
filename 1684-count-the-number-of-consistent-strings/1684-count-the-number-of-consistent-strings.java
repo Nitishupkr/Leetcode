@@ -1,6 +1,7 @@
 class Solution {
     public int countConsistentStrings(String allowed, String[] words) {
         int counter=0;
+        // first we will take the couter and then add that allowed in the set and then again we take string word and traverse that array and make a flag and return the counter
         HashSet<Character>set=new HashSet<Character>();
         for(int i =0;i<allowed.length();i++){
             set.add(allowed.charAt(i));
